@@ -91,9 +91,9 @@
 
   - **কর্মক্ষমতা:** GetX focus করেছে কর্মক্ষমতার উপর এবং resources(data/variable/code) এর ব্যবহার কমিয়ে আনার জন্য । GetX, Streams অথবা ChangeNotifier ব্যবহার করে না।
 
-  - **উৎপাদনশীলতা:** GetX uses an easy and pleasant syntax. No matter what you want to do, there is always an easier way with GetX. It will save hours of development and will provide the maximum performance your application can deliver.
+  - **উৎপাদনশীলতা:** GetX এর ব্যবহার সহজ এবং মুগ্ধকর syntex । আপনি যা করতে চান তা কোন ব্যাপার না, GetX এ সবসময় একটি সহজ উপায় রয়েছে।  এটা আপনার development এর সময় বাঁচাবে এবং আপনাকে সাহায্য করবে সর্বোচ্চ ভালো application বানাতে।
 
-    Generally, the developer should be concerned with removing controllers from memory. With GetX this is not necessary because resources are removed from memory when they are not used by default. If you want to keep it in memory, you must explicitly declare "permanent: true" in your dependency. That way, in addition to saving time, you are less at risk of having unnecessary dependencies on memory. Dependency loading is also lazy by default.
+    সাধারনত, developer কে মেমরি থেকে controller অপসারণের বিষয়ে উদ্বিগ্ন হওয়া উচিত। GetX ব্যবহার করার সময় এর কোনো প্রয়োজন নেই কারণ যেসকল resources ব্যবহার করা হয় না , সেগুলো GetX memory থেকে  অপসারণ করে ফেলে। তুমি যদি এগুলো memory তে রাখতে চাও, তোমাকে অবশ্যই dependences এ স্পষ্টভাবে declare করতে হবে যে "permanent: true" । এইভাবে, সময় বাঁচানোর পাশাপাশি, তুমি memory তে  অপ্রয়োজনীয় dependences ব্যবহারের কম ঝুঁকিতে আছো।
 
   - **সংগঠন:** GetX allows the total decoupling of the View, presentation logic, business logic, dependency injection, and navigation. You do not need context to navigate between routes, so you are not dependent on the widget tree (visualization) for this. You don't need context to access your controllers/blocs through an inheritedWidget, so you completely decouple your presentation logic and business logic from your visualization layer. You do not need to inject your Controllers/Models/Blocs classes into your widget tree through `MultiProvider`s. For this, GetX uses its own dependency injection feature, decoupling the DI from its view completely.
 
